@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F56D15;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.barpancho.ControladorPrincipal">
+    <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFDB15;">
+         <children>
+            <ImageView fitHeight="118.0" fitWidth="123.0" layoutX="13.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="218.3283482358463" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="14.0">
+               <image>
+                  <Image url="@../../../images/logo_bar.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelUsuario" alignment="CENTER" layoutX="13.0" layoutY="161.0" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: #F56D15;" text="usuario" wrapText="true" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="160.0" />
+                <Button fx:id="cerrar" layoutX="14.0" layoutY="308.0" mnemonicParsing="false" onAction="#close" text="Cerrar" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.000000000000007" AnchorPane.rightAnchor="78.41790781681834" AnchorPane.topAnchor="308.0" />
+         </children>
+         <HBox.margin>
+            <Insets right="10.0" />
+         </HBox.margin>
+      </AnchorPane>
+        <TabPane fx:id="tabPane" prefHeight="360.0" prefWidth="489.0" style="-fx-background-color: #FFFFFF;" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tabMesas" onSelectionChanged="#colorMesas" text="Mesas">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="423.0">
+                     <children>
+                        <GridPane hgap="2.0" prefHeight="318.8059610735207" prefWidth="405.4925257699162" vgap="2.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="45.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="btnMesa1" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="75.0" text="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa2" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="108.0" text="2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa3" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="86.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa4" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="74.0" text="4" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa5" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="76.0" text="5" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa6" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="78.0" text="6" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa7" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="78.0" text="7" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa8" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="77.0" text="8" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa9" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="78.0" text="9" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa10" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="99.0" prefWidth="99.0" text="10" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa11" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="88.0" text="11" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa12" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="83.0" text="12" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa13" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="102.0" text="13" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa14" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="78.0" text="14" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                              <Button fx:id="btnMesa15" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" mnemonicParsing="false" onAction="#selectMesa" prefHeight="75.0" prefWidth="78.0" text="15" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                                 <GridPane.margin>
+                                    <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                                 </GridPane.margin></Button>
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabPedido" onSelectionChanged="#setPedidoProductos" text="Pedido">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="235.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="124.0" layoutY="70.0" prefHeight="318.8059610735207" prefWidth="405.4925257699162" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <items>
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                 <children>
+                                    <HBox>
+                                       <children>
+                                          <Label fx:id="pedidoMesa" prefHeight="19.0" prefWidth="75.0" text="Mesa">
+                                             <HBox.margin>
+                                                <Insets left="5.0" right="20.0" />
+                                             </HBox.margin>
+                                             <padding>
+                                                <Insets right="40.0" />
+                                             </padding></Label>
+                                          <Label fx:id="pedidoComensales" text="Comensales" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER" prefHeight="32.0" prefWidth="203.0">
+                                       <children>
+                                          <Button fx:id="pedidoFinalizar" mnemonicParsing="false" text="Factura">
+                                             <HBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="pedidoCancelar" mnemonicParsing="false" onAction="#cancelarPedido" text="Cancelar">
+                                             <HBox.margin>
+                                                <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                                             </HBox.margin></Button>
+                                       </children>
+                                    </HBox>
+                                    <Pane prefHeight="271.0" prefWidth="194.0">
+                                       <children>
+                                          <ListView fx:id="pedidoDetalle" layoutX="3.0" layoutY="6.0" prefHeight="264.0" prefWidth="189.0" />
+                                       </children>
+                                    </Pane>
+                                 </children></VBox>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                 <children>
+                                    <TextField fx:id="pedidoNombre" editable="false" layoutX="10.0" layoutY="14.0" prefHeight="29.0" prefWidth="111.0" AnchorPane.leftAnchor="10.0" />
+                                    <ListView fx:id="pedidoProductos" layoutX="-2.0" layoutY="88.0" prefHeight="231.0" prefWidth="196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="88.0" />
+                                    <Button fx:id="pedidoAdd" layoutX="132.0" layoutY="15.0" mnemonicParsing="false" onAction="#addToDetalles" text="Añadir" AnchorPane.rightAnchor="10.0" />
+                                    <TextField fx:id="pedidoUnidades" layoutX="80.0" layoutY="55.0" prefHeight="29.0" prefWidth="103.0" AnchorPane.rightAnchor="10.0" />
+                                    <Label layoutX="14.0" layoutY="60.0" text="Unidades" AnchorPane.leftAnchor="10.0" />
+                                 </children></AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabProductos" onSelectionChanged="#setListaProductos" text="Productos">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="235.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" layoutX="88.0" layoutY="37.0" prefHeight="318.8059610735207" prefWidth="405.4925257699162" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <items>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" percentHeight="60.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnSpan="2">
+                                       <children>
+                                          <Label text="Nombre">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </VBox.margin></Label>
+                                          <TextField fx:id="productosNombre">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                          <Label text="Precio">
+                                             <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                             </VBox.margin></Label>
+                                          <TextField fx:id="productosPrecio">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                                             </VBox.margin>
+                                          </TextField>
+                                       </children>
+                                    </VBox>
+                                    <Button fx:id="productosAdd" mnemonicParsing="false" onAction="#insertProducto" prefHeight="65.0" prefWidth="111.0" text="Añadir" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin></Button>
+                                    <Button fx:id="productosBuscar" mnemonicParsing="false" onAction="#readProducto" prefHeight="61.0" prefWidth="97.0" text="Buscar" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin></Button>
+                                    <Button fx:id="productosModificar" mnemonicParsing="false" onAction="#updateProducto" prefHeight="57.0" prefWidth="108.0" text="Modificar" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin></Button>
+                                    <Button fx:id="productosBorrar" mnemonicParsing="false" onAction="#deleteProducto" prefHeight="55.0" prefWidth="95.0" text="Borrar" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                       </GridPane.margin></Button>
+                                 </children>
+                              </GridPane>
+                              <Pane fx:id="productosListaParent" prefHeight="306.0" prefWidth="201.0">
+                                 <children>
+                                    <ListView fx:id="productosLista" layoutX="1.0" layoutY="-3.0" prefHeight="323.0" prefWidth="200.0" />
+                                 </children>
+                              </Pane>
+                          </items>
+                        </SplitPane>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+                <Tab fx:id="tabUsuario" onSelectionChanged="#setDatosUsuario" text="Usuario">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="319.0" prefWidth="235.0">
+                     <children>
+                        <GridPane layoutX="103.0" layoutY="69.0" prefHeight="318.8059610735207" prefWidth="405.4925257699162" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Nombre y apellido">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin></Label>
+                              <TextField fx:id="usuarioNombre" GridPane.columnIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="usuarioApellido" GridPane.columnIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label text="Usuario y contraseña" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin></Label>
+                              <TextField fx:id="usuarioUsuario" editable="false" layoutX="143.0" layoutY="34.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="usuarioPassword" layoutX="143.0" layoutY="112.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="usuarioEmail" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <TextField fx:id="usuarioTelefono" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets left="5.0" right="5.0" />
+                                 </GridPane.margin>
+                              </TextField>
+                              <Label text="Email" GridPane.rowIndex="2">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin></Label>
+                              <Label text="Teléfono" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </GridPane.margin></Label>
+                              <Button fx:id="usuarioModificar" mnemonicParsing="false" onAction="#updateUser" prefHeight="55.0" prefWidth="123.0" text="Guardar cambios" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <GridPane.margin>
+                                    <Insets bottom="25.0" left="5.0" right="5.0" top="25.0" />
+                                 </GridPane.margin></Button>
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
+                    </content>
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </children>
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+</HBox>
